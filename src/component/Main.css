@@ -1,0 +1,335 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+.main {
+  display: flex;
+  justify-content: space-between;
+  padding: 3rem 7rem;
+}
+
+.left-main {
+  display: flex;
+  flex-direction: column;
+}
+.left-main .heading {
+  color: #fff;
+  font-family: "Raleway";
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 2.7rem;
+}
+.left-main .heading h1 .redline {
+  height: 1rem;
+  width: 10rem;
+  background-color: red;
+}
+.left-main .heading span {
+  font-family: "Roboto";
+  color: #0096FF;
+}
+.left-main .feature {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.left-main .feature img {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 2.8rem;
+}
+.left-main .feature p {
+  color: #fff;
+  font-size: 24px;
+}
+.left-main .feature span {
+  color: #0096FF;
+}
+
+.right-main {
+  border-radius: 0.6rem;
+  padding: 1.7rem 1rem;
+  background-color: #fff;
+}
+.right-main .signup {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.3rem;
+  justify-content: center;
+}
+.right-main .signup div {
+  display: flex;
+  margin: 0 17.93%;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+}
+.right-main .signup div h4 {
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 100%;
+  margin-bottom: 2px;
+  background-color: #0096FF;
+}
+.right-main .signup div p {
+  font-size: 15px;
+  color: #3C4852;
+}
+.right-main .heading-right {
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+  color: #3C4852;
+  margin-bottom: 1.2rem;
+}
+.right-main .expired {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  border-radius: 8px;
+  border: 2px solid #888888;
+  background-color: #d9d8d8;
+  width: 26rem;
+  padding: 1.1rem 1rem;
+  margin-bottom: 0.6rem;
+}
+.right-main .expired .absolute-expired {
+  top: 0;
+  left: 44px;
+  background-color: #F77171;
+  font-size: 0.7rem;
+  font-weight: 500;
+  padding: 1px 26px;
+  border-radius: 0 0 5px 5px;
+  color: #fff;
+  position: absolute;
+}
+.right-main .expired input[type=radio] {
+  transform: scale(1.6);
+  accent-color: grey;
+  margin-right: 1rem;
+}
+.right-main .expired label {
+  display: flex;
+  align-items: center;
+}
+.right-main .expired label .period-expired {
+  color: #aeaeae;
+  font-size: 0.9rem;
+}
+.right-main .expired label .price-expired {
+  right: 1rem;
+  position: absolute;
+  text-align: end;
+}
+.right-main .expired label .price-expired .price-top {
+  color: #aeaeae;
+  font-size: 0.7rem;
+  margin-bottom: 0.1rem;
+}
+.right-main .expired label .price-expired .price-top span {
+  color: #BEBEBE;
+  font-size: 1rem;
+}
+.right-main .expired label .price-expired .price-bottom {
+  color: #aeaeae;
+  font-size: 0.7rem;
+}
+.right-main .expired label .price-expired .price-bottom span {
+  color: #BEBEBE;
+}
+.right-main .form {
+  margin-bottom: 1rem;
+}
+.right-main .form .two,
+.right-main .form .three,
+.right-main .form .four {
+  display: flex;
+  justify-content: flex-start;
+  position: relative;
+  border-radius: 8px;
+  width: 26rem;
+  padding: 1.1rem 1rem;
+  border: 2px solid #888888;
+  margin-bottom: 0.6rem;
+}
+.right-main .form .absolute {
+  top: 0;
+  left: 44px;
+  background-color: #47BA68;
+  font-size: 0.7rem;
+  font-weight: 500;
+  padding: 1px 26px;
+  border-radius: 0 0 5px 5px;
+  color: #fff;
+  position: absolute;
+}
+.right-main .form input[type=radio] {
+  transform: scale(1.6);
+  accent-color: grey;
+  margin-right: 1rem;
+}
+.right-main .form input:hover {
+  cursor: pointer;
+}
+.right-main .form label {
+  display: flex;
+  align-items: center;
+}
+.right-main .form label .period {
+  color: #3C4852;
+  font-weight: 500;
+  font-size: 0.9rem;
+}
+.right-main .form label .price {
+  right: 1rem;
+  position: absolute;
+  text-align: end;
+}
+.right-main .form label .price .price-top {
+  color: #3C4852;
+  font-size: 0.7rem;
+  margin-bottom: 0.1rem;
+}
+.right-main .form label .price .price-top span {
+  color: #3C4852;
+  font-size: 1rem;
+}
+.right-main .form label .price .price-bottom {
+  color: #3C4852;
+  font-size: 0.7rem;
+}
+.right-main .form label .price .price-bottom span {
+  color: #BEBEBE;
+}
+.right-main .form .selected {
+  background-color: #c8efd2;
+  border: 2px solid #47BA68;
+}
+.right-main .form .selected::before {
+  content: "";
+  position: absolute;
+  top: 1.011rem;
+  left: 0.79rem;
+  width: 30%;
+  height: 60%;
+  background-image: url(/public/assets/Tick.png);
+  background-repeat: no-repeat;
+  background-position: top left;
+  background-size: 1.2rem;
+  z-index: 10;
+}
+.right-main .form .selected label .absolute {
+  background-color: #47BA68;
+}
+.right-main .fee-box {
+  border-top: 2px solid #dadada;
+}
+.right-main .fee-box .sub-fee {
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.right-main .fee-box .sub-fee p {
+  color: #3C4852;
+  font-size: small;
+}
+.right-main .fee-box .limited {
+  padding: 0.7rem 1rem;
+  border-radius: 7px;
+  border: 2px solid #DE4313;
+  background: linear-gradient(135deg, rgba(222, 67, 19, 0.2) 0%, rgba(222, 67, 19, 0.2) 0.75%, rgba(222, 67, 19, 0.2) 2.92%, rgba(222, 68, 20, 0.2) 6.37%, rgba(223, 69, 21, 0.2) 10.97%, rgba(223, 72, 22, 0.2) 16.59%, rgba(224, 75, 24, 0.2) 23.1%, rgba(225, 80, 27, 0.2) 30.37%, rgba(227, 86, 31, 0.2) 38.27%, rgba(229, 94, 36, 0.2) 46.66%, rgba(231, 104, 43, 0.2) 55.41%, rgba(235, 117, 51, 0.2) 64.39%, rgba(238, 132, 60, 0.2) 73.47%, rgba(243, 149, 71, 0.2) 82.52%, rgba(248, 169, 84, 0.2) 91.41%, rgba(254, 193, 99, 0.2) 100%);
+}
+.right-main .fee-box .limited .limited-top {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  justify-content: space-between;
+}
+.right-main .fee-box .limited .limited-top .limited-left-top {
+  font-weight: 600;
+  color: #DE4313;
+  font-size: small;
+}
+.right-main .fee-box .limited .limited-top .limited-right-top {
+  font-size: small;
+}
+.right-main .fee-box .limited .offer-time {
+  display: flex;
+  align-items: center;
+}
+.right-main .fee-box .limited .offer-time img {
+  width: 0.9rem;
+  height: 0.9rem;
+  margin-right: 0.7rem;
+}
+.right-main .fee-box .limited .offer-time p {
+  font-size: 0.65rem;
+  color: #DE4313;
+}
+.right-main .fee-box .total {
+  display: flex;
+  padding: 0.5rem 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+.right-main .fee-box .total p {
+  font-size: small;
+  color: #3C4852;
+  font-weight: 600;
+}
+.right-main .fee-box .total p span {
+  font-size: small;
+  color: #3C4852;
+  font-weight: normal;
+}
+.right-main .fee-box .total h4 {
+  color: #3C4852;
+  font-weight: 500;
+}
+.right-main .buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 1.3rem;
+  margin-bottom: 1rem;
+  justify-content: space-between;
+}
+.right-main .buttons .cancel {
+  width: 48%;
+  padding: 0.9rem 0;
+  border-radius: 5px;
+  color: #DE4313;
+  font-size: 12px;
+  font-weight: 700;
+  border: 2px solid #DE4313;
+  background-color: #fff;
+  transition: all 0.5s ease-out;
+}
+.right-main .buttons .cancel:hover {
+  color: #fff;
+  cursor: pointer;
+  border: 2px solid #fff;
+  background-color: #DE4313;
+}
+.right-main .buttons .proceed {
+  width: 48%;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  padding: 0.9rem 0;
+  border-radius: 5px;
+  background-color: #47BA68;
+  border: 2px solid #47BA68;
+  transition: all 0.5s ease-out;
+}
+.right-main .buttons .proceed:hover {
+  color: #47BA68;
+  cursor: pointer;
+  border: 2px solid #47BA68;
+  background-color: #fff;
+}/*# sourceMappingURL=Main.css.map */

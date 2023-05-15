@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  padding: 0.7rem 5rem;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fff;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+.left .logo {
+  cursor: pointer;
+}
+.left a {
+  margin-left: 2.8rem;
+  cursor: pointer;
+}
+.left a img {
+  margin-left: 0.3rem;
+}
+.left a:hover {
+  color: #0048FF;
+}
+
+.right {
+  display: flex;
+  align-items: center;
+}
+.right img {
+  cursor: pointer;
+}
+.right p {
+  margin-left: 2.8rem;
+  cursor: pointer;
+}
+.right p:hover {
+  color: #0048FF;
+}
+.right button {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  color: #fff;
+  width: 10.375rem;
+  height: 2.5rem;
+  padding: 0.625rem 2.625rem;
+  background: linear-gradient(266.79deg, #0048FF 4.63%, #0096FF 100%);
+  border-radius: 3.25rem;
+  margin-left: 2.8rem;
+  transition: all 0.2s ease-in-out;
+}
+.right button:hover {
+  color: #0048FF;
+  cursor: pointer;
+  border: 2px solid #0048FF;
+  background: #fff;
+}/*# sourceMappingURL=Navbar.css.map */
